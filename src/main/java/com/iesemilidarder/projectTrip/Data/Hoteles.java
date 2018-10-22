@@ -11,4 +11,6 @@ public class Hoteles extends Product {
     public void setNumHab(Integer numHab) {
         this.numHab = numHab;
     }
+
+    public void setPrice(Double price) { }
 }
