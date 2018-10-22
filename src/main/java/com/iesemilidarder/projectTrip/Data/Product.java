@@ -3,6 +3,11 @@ package com.iesemilidarder.projectTrip.Data;
 public abstract class Product {
     private String name;
     private Double price;
+    private String persons;
+
+    public String getPersons() { return persons; }
+
+    public void setPersons(String persons) { this.persons = persons; }
 
     public Double getPrice() {
         return price;
