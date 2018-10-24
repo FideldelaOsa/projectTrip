@@ -1,15 +1,20 @@
 package com.iesemilidarder.projectTrip;
 
-import java.awt.*;
+import com.iesemilidarder.projectTrip.data.Product;
+import com.iesemilidarder.projectTrip.helper.DataHelper;
+
+import java.util.List;
 
 public class Launcher {
 
     public static void main(String... args) {
-        try
-        {
+        try {
+            DataHelper helper = new DataHelper();
+            List<Product> aux = helper.getServerData();
+            System.out.println("yuhu:" + aux.size());
 
-        } catch (Exception e) {
-            SystemUtilHelper.logError(e);
+        } /*catch (Exception e) {
+            SystemUtilHelper.logError(e);*/
         }
 
     }

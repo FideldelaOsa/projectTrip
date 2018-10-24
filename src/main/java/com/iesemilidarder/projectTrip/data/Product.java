@@ -1,4 +1,4 @@
-package com.iesemilidarder.projectTrip.Data;
+package com.iesemilidarder.projectTrip.data;
 
 public abstract class Product {
     private String name;
