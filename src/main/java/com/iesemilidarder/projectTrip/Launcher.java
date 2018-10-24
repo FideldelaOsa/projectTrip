@@ -13,9 +13,8 @@ public class Launcher {
             List<Product> aux = helper.getServerData();
             System.out.println("yuhu:" + aux.size());
 
-        } /*catch (Exception e) {
-            SystemUtilHelper.logError(e);*/
         }
+
 
     }
 }
