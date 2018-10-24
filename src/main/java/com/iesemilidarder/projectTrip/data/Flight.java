@@ -1,23 +1,20 @@
-package com.iesemilidarder.projectTrip.Data;
+package com.iesemilidarder.projectTrip.data;
 
-public class Vuelos extends Product{
-    private String destino;
+public class Flight extends Product{
+    private String destination;
 
-    public String getDestino() {
-        return destino;
+
+    public String getDestination() {
+        return destination;
     }
 
-    public void setDestino(String destino) {
-        this.destino = destino;
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
-    public String getAvion() {
-        return avion;
+    public enum Company {
+        Iberia, AirEuropa, Vueling, EasyJet, Eurowings
     }
 
-    public void setAvion(String avion) {
-        this.avion = avion;
-    }
 
-    private  String avion;
 }
