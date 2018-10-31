@@ -11,6 +11,13 @@ public class Launcher {
             DataHelper helper = new DataHelper();
             List<Product> aux = helper.getServerData();
             System.out.println("yuhu:" + aux.size());
+<<<<<<< HEAD
+=======
+
+        }
+
+
+>>>>>>> b56a5073bce3bd139889026efe3d99d89b20b257
     }
 }
 
