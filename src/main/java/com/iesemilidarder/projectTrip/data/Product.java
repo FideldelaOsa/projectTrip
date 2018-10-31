@@ -1,9 +1,10 @@
 package com.iesemilidarder.projectTrip.data;
 
-public abstract class Product {
+public abstract class Product implements Country {
     private String name;
     private Double price;
     private String persons;
+
 
     public String getPersons() { return persons; }
 
