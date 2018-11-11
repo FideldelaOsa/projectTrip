@@ -1,5 +1,6 @@
 package com.iesemilidarder.projectTrip.controller;
 
+import com.iesemilidarder.projectTrip.data.Activity;
 import com.iesemilidarder.projectTrip.data.Product;
 import com.iesemilidarder.projectTrip.helper.DataHelper;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,17 +14,13 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RestController
 public class Controller {
 
-    @RequestMapping("/getAllProducts")
-    public List<Product> getProducts(){
-        List<Product> items = DataHelper.getServerData();
-        return items;}
+    @RequestMapping("/getAllProducts") {-
+    }
+    //@RequestMapping("/getProductsTypes")
 
+    //@RequestMapping("/getProduct/{id}")
 
-    @RequestMapping()("/ getProduct")
-    public Product Product(@RequestParam(value="name", defaultValue="Activity") String name) {
-        return new List<Product>();
-
-    @RequestMapping(method=POST)("/ addProduct")
+    //@RequestMapping(method=POST)("/addProduct")
 }
 
 

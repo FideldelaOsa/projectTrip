@@ -4,7 +4,11 @@ public abstract class Product implements Country {
     private String name;
     private Double price;
     private String persons;
+    private String enterprise;
 
+    public String getEnterprise() { return enterprise; }
+
+    public void setEnterprise(String enterprise) { this.enterprise = enterprise; }
 
     public String getPersons() { return persons; }
 
