@@ -14,13 +14,21 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RestController
 public class Controller {
 
-    @RequestMapping("/getAllProducts") {-
+    @RequestMapping("/getAllProducts")
+    public List<Product> getALLProducts()
+    {
+        DataHelper items = new DataHelper();
+
+        return items.getProducts();
     }
     //@RequestMapping("/getProductsTypes")
 
     //@RequestMapping("/getProduct/{id}")
 
-    //@RequestMapping(method=POST)("/addProduct")
+    @RequestMapping(method=POST)("/addProduct")
+    {
+        List<String> producto1 = new ArrayList<String>();
+    }
 }
 
 

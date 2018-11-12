@@ -10,11 +10,15 @@ import java.util.List;
 
 public class DataHelper {
 
-    private static List<Product> Productos = new ArrayList<>();
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    private static List<Product> products = new ArrayList<>();
 
     public DataHelper() {
         //DataHelper data = new DataHelper()
-        if (Productos.isEmpty()) {
+        if (products.isEmpty()) {
             generateData();
         }
     }
@@ -35,15 +39,15 @@ public class DataHelper {
                 a = new Restaurant();
             }
             a.setName("item "+i);
-            Productos.add(a);
+            products.add(a);
         }
     }
 
-    public List<Product> getServerData() {
-        return Productos;
+    public static List<Product> getServerData() {
+        return products;
     }
 
-    public void setServerData(List<Product> serverData) {
-        DataHelper.Productos = serverData;
+    public static void setServerData(List<Product> serverData) {
+        DataHelper.products = serverData;
     }
 }
