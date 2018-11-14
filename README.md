@@ -1,2 +1,2 @@
 # projectTrip
-Simil a pagina de Tripadvisor
+Api Rest de consulta a un json

@@ -1,10 +1,20 @@
 package com.iesemilidarder.projectTrip.data;
 
+import java.util.UUID;
+
 public abstract class Product implements Country {
     private String name;
     private Double price;
     private String persons;
     private String enterprise;
+    private String id;
+
+    public Product() {
+        this.id = UUID.randomUUID().toString();
+    }
+    public String getId() { return id; }
+
+    public void setId(String id) { this.id = id; }
 
     public String getEnterprise() { return enterprise; }
 
